@@ -41,7 +41,7 @@ class handler(BaseHTTPRequestHandler):
         payload = json.dumps({
             "model": MODEL,
             "messages": [{"role": "system", "content": PERSONA}] + messages,
-            "max_tokens": 8000,
+            "max_tokens": 7000,
             "temperature": 0.8
         }).encode()
 
